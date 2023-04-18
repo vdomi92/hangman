@@ -9,11 +9,26 @@
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  border: 1px solid #000;
   margin: 0 0.5rem;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 3rem;
+}
+
+.found {
+  border-color: green !important;
+  border: 2px solid;
+  background-color: green;
+  color: white;
+  border-radius: 2px;
+}
+
+.notfound {
+  border-color: red !important;
+  border: 2px solid;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
 }
 
 .guessInput {
@@ -33,6 +48,10 @@
   color: white;
 }
 
+.win {
+  background-color: green !important;
+}
+
 .error {
   animation-name: highlight;
   animation-duration: 1s;
@@ -41,9 +60,9 @@
 
 @keyframes highlight {
   0% {
-    background-color: #ff0000; /* yellow */
+    background-color: #ff0000;
   }
   100% {
-    background-color: #ffffff; /* white */
+    background-color: #ffffff;
   }
 }

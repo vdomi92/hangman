@@ -1,5 +1,3 @@
-import React from "react";
-
 const PastGuesses = ({ oldGuesses, errorIndex }) => {
   return (
     <div className="pastGuesses">

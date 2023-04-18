@@ -1,15 +1,16 @@
-import React from "react";
-
-const Restart = ({ handleRestart, word }) => {
+const Restart = ({ handleRestart, found }) => {
+  const className = found ? "win" : "";
   return (
     <>
       <div>
-        Game Over{" "}
-        <button className="restartButton" onClick={handleRestart}>
+        {found ? "Good job!" : "Game over!"}
+        <button
+          className={`restartButton ${className}`}
+          onClick={handleRestart}
+        >
           Restart game
         </button>
       </div>
-      <div>Word was: {word}</div>
     </>
   );
 };

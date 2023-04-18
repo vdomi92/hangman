@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const Guess = ({ handleGuessButton, guess, setGuess }) => {
   const handleGuessIput = (e) => {
     let newValue = e.target.value.toLowerCase();
